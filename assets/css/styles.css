@@ -24,11 +24,18 @@ body {
   gap: 0.5rem;
   font-weight: bold;
   color: #0047AB;
+  text-decoration: none;
 }
 
+/* LOGO responsivo */
 .logo-img {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.08);
 }
 
 .menu {
@@ -110,11 +117,16 @@ footer {
   margin-top: 3rem;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive (Mobile) ===== */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  /* Ajuste de logo para móvil */
+  .logo-img {
+    width: 34px;
   }
 
   .hero h1 {
