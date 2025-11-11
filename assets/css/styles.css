@@ -1,65 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* estilos generales */
 body {
-    background: #ffffff;
-    color: #0d253f;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
 }
 
-/* Navbar */
+/* navbar */
 .navbar {
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: #005eff;
 }
 
 .menu {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 1.5rem;
 }
 
-.menu a {
+.menu li a {
     text-decoration: none;
-    color: #0d253f;
-    transition: 0.3s;
+    color: #000080;
+    font-weight: bold;
 }
 
-.menu a:hover {
-    color: #005eff;
-}
-
-/* Hero */
+/* hero */
 .hero {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    gap: 20px;
-}
-
-.cta {
-    padding: 12px 24px;
-    background-color: #005eff;
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom right, #0047AB, #87CEEB);
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
 }
 
-.cta:hover {
-    background-color: #003fbd;
+.btn-primary {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 10px;
+    background: white;
+    color: #0047AB;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* secciones */
+section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* grid con tarjetas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    margin-top: 3rem;
 }
