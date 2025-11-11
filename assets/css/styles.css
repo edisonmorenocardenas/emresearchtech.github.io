@@ -1,3 +1,11 @@
+/* ===== Estilos generales ===== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #222;
+  background: #f7f9fc;
+}
+
 /* ===== Navbar ===== */
 .navbar {
   display: flex;
@@ -6,7 +14,7 @@
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255,255,255,0.97);
   z-index: 100;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -14,60 +22,167 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  font-weight: 800;
+  gap: 0.5rem;
+  font-weight: bold;
   color: #0047AB;
-  font-size: 1.25rem;
-  user-select: none;
   text-decoration: none;
 }
 
 .logo-img {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-  transition: transform .3s ease;
+  width: 42px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
 }
 
 .logo-img:hover {
   transform: scale(1.08);
 }
 
+/* ===== Menú ===== */
 .menu {
   list-style: none;
   display: flex;
-  margin-left: auto; /* empuja el menú a la derecha */
   gap: 1.5rem;
+  margin-left: auto; /* empuja el menú a la derecha */
 }
 
 .menu li a {
   text-decoration: none;
   color: #0047AB;
   font-weight: bold;
-  transition: color 0.3s, border-bottom 0.3s;
-  padding-bottom: 2px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
 
-.menu li a.active {
-  color: #FF6600; /* resaltado del link activo */
-  border-bottom: 2px solid #FF6600;
+/* Link activo */
+.menu li a.active,
+.menu li a:hover {
+  background: #0047AB;
+  color: white;
 }
 
-/* ===== Responsive ===== */
+/* Botón menú */
+.button-primary {
+  background: #0047AB;
+  color: white !important;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.button-primary:hover {
+  background: #0066cc;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom right, #0047AB, #87CEEB);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-primary {
+  background: white;
+  color: #0047AB;
+}
+
+/* ===== Secciones ===== */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0047AB;
+}
+
+/* ===== Grid de tarjetas ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #f7f9fc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+  color: #0047AB;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: #0047AB;
+  color: white;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive (Mobile) ===== */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     gap: 1rem;
   }
-  .menu {
-    flex-direction: column;
-    gap: 0.8rem;
-    margin-left: 0;
-  }
+
   .logo-img {
     width: 34px;
   }
-  .logo {
-    font-size: 1rem;
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
   }
 }
