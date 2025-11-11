@@ -1,0 +1,22 @@
+# Archivos y carpetas del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Carpeta de dependencias (por si en el futuro usas npm/node)
+node_modules/
+
+# Archivos de logs
+*.log
+logs/
+npm-debug.log*
+
+# Carpetas de compilaciones o builds (si usas frameworks más adelante)
+dist/
+build/
+
+# Configuración de VS Code
+.vscode/
+
+# Python cache (si empiezas a usar scripts web en Python)
+__pycache__/
+*.pyc
