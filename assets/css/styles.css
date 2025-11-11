@@ -1,78 +1,123 @@
-/* estilos generales */
+/* ===== Estilos generales ===== */
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #222;
 }
 
-/* navbar */
+/* ===== Navbar ===== */
 .navbar {
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.95);
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: #0047AB;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .menu li a {
-    text-decoration: none;
-    color: #000080;
-    font-weight: bold;
+  text-decoration: none;
+  color: #0047AB;
+  font-weight: bold;
 }
 
-/* hero */
+/* ===== Hero ===== */
 .hero {
-    text-align: center;
-    padding: 6rem 2rem;
-    background: linear-gradient(to bottom right, #0047AB, #87CEEB);
-    color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom right, #0047AB, #87CEEB);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .btn-primary {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 0.8rem 1.6rem;
-    border-radius: 10px;
-    background: white;
-    color: #0047AB;
-    font-weight: bold;
-    text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  background: white;
+  color: #0047AB;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-/* secciones */
-section {
-    padding: 4rem 2rem;
-    max-width: 900px;
-    margin: auto;
+/* ===== Secciones ===== */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-/* grid con tarjetas */
+/* ===== Grid de tarjetas ===== */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
-    background: #ffffff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* footer */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Footer ===== */
 footer {
-    text-align: center;
-    background: #f4f4f4;
-    padding: 3rem 1rem;
-    margin-top: 3rem;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
 }
