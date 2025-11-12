@@ -9,25 +9,23 @@ body {
 /* ===== Navbar ===== */
 .navbar {
   display: flex;
-  flex-direction: column; /* Logo y menú en columna */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 1.5rem 2rem;
-  background: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
   z-index: 100;
+  padding: 1rem 0;
 }
 
-.logo {
+/* --- Sección superior: logo + nombre --- */
+.navbar-top {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 0.3rem;
-  text-decoration: none;
-  color: #0047AB;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .logo-img {
@@ -40,26 +38,34 @@ body {
   transform: scale(1.08);
 }
 
-.logo h1 {
+.logo-text {
+  text-align: center;
+}
+
+.logo-text h1 {
   font-size: 1.6rem;
   margin: 0;
   color: #0047AB;
 }
 
-.logo h3 {
+.logo-text h3 {
   font-size: 0.9rem;
   color: #777;
   margin-top: 0.2rem;
   font-weight: normal;
 }
 
-/* ===== Menú de navegación ===== */
+/* --- Sección inferior: menú debajo del nombre --- */
+.navbar-bottom {
+  margin-top: 0.6rem;
+}
+
 .menu {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin: 0.5rem 0 0;
   padding: 0;
 }
 
@@ -237,7 +243,7 @@ footer a:hover {
     width: 55px;
   }
 
-  .logo h1 {
+  .logo-text h1 {
     font-size: 1.3rem;
   }
 
