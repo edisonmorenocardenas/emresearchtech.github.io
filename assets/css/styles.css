@@ -9,60 +9,76 @@ body {
 /* ===== Navbar ===== */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Logo y menú en columna */
   align-items: center;
-  padding: 1rem 2rem;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,0.97);
   z-index: 100;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: bold;
-  color: #0047AB;
+  text-align: center;
+  gap: 0.3rem;
   text-decoration: none;
+  color: #0047AB;
 }
 
 .logo-img {
-  width: 42px;
+  width: 70px;
   height: auto;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
   transform: scale(1.08);
 }
 
-/* ===== Menú ===== */
+.logo h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #0047AB;
+}
+
+.logo h3 {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.2rem;
+  font-weight: normal;
+}
+
+/* ===== Menú de navegación ===== */
 .menu {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
-  margin-left: auto; /* empuja el menú a la derecha */
+  margin-top: 1rem;
+  padding: 0;
 }
 
 .menu li a {
   text-decoration: none;
   color: #0047AB;
   font-weight: bold;
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
 }
 
-/* Link activo */
 .menu li a.active,
 .menu li a:hover {
   background: #0047AB;
   color: white;
 }
 
-/* Botón menú */
+/* ===== Botón primario ===== */
 .button-primary {
   background: #0047AB;
   color: white !important;
@@ -70,7 +86,7 @@ body {
   border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: background 0.3s;
 }
 
 .button-primary:hover {
@@ -98,17 +114,26 @@ body {
 .hero .btn-primary {
   background: white;
   color: #0047AB;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero .btn-primary:hover {
+  background: #0047AB;
+  color: white;
 }
 
 /* ===== Secciones ===== */
 .section {
   padding: 4rem 2rem;
   max-width: 1000px;
-  margin: auto;
+  margin: 2rem auto;
   background: white;
   border-radius: 12px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
@@ -128,7 +153,7 @@ h2 {
   background: #f7f9fc;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -138,7 +163,7 @@ h2 {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== Footer ===== */
@@ -160,34 +185,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ===== Responsive (Mobile) ===== */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .logo-img {
-    width: 34px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .menu {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  .menu li {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-
+/* ===== Members (TEL) ===== */
 .members-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -198,9 +196,14 @@ footer a:hover {
 .member-card {
   background: #fff;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
 }
 
 .member-card img {
@@ -209,9 +212,45 @@ footer a:hover {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
+  border: 3px solid #0047AB;
+}
+
+.member-links {
+  margin-top: 0.8rem;
 }
 
 .member-links a {
-  color: #0056b3;
+  color: #0047AB;
   text-decoration: none;
+  margin: 0 0.4rem;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.member-links a:hover {
+  color: #0066cc;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 55px;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
 }
