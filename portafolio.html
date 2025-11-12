@@ -3,48 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio - EM Research & Tech</title>
+  <title>Portafolio | EM Research & Tech</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- ===== Navbar ===== -->
 <header class="navbar">
   <a href="index.html" class="logo">
     <img src="assets/img/logo.png" alt="Logo EM Research & Tech" class="logo-img">
-    EM Research & Tech
+    <h1>EM</h1> Research <br> & Tech
   </a>
   <ul class="menu">
+    <li><a href="index.html">Inicio</a></li>
     <li><a href="nosotros.html">Nosotros</a></li>
     <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="research.html">Research</a></li>
     <li><a href="portafolio.html" class="active">Portafolio</a></li>
     <li><a href="contacto.html" class="button-primary">Contáctanos</a></li>
   </ul>
 </header>
 
+<!-- ===== Main ===== -->
 <main>
+  <!-- ===== Encabezado ===== -->
+  <section class="hero small">
+    <h1>Portafolio Institucional</h1>
+    <p>Proyectos de investigación, soluciones tecnológicas y diseños desarrollados por EM Research & Tech y sus laboratorios.</p>
+  </section>
+
+  <!-- ===== Categorías ===== -->
   <section class="section">
-    <h2>Portafolio Profesional</h2>
-    <p>Este portafolio muestra mis trabajos como docente-investigador y desarrollador tecnológico.</p>
+    <h2>Áreas del Portafolio</h2>
+    <div class="grid three-cols">
+      <div class="card">
+        <h3>📚 Proyectos de Investigación</h3>
+        <p>Incluye papers, colaboraciones científicas y proyectos académicos desarrollados en el marco del Technology and Engineering Laboratory (TEL) y futuras unidades de investigación.</p>
+      </div>
+      <div class="card">
+        <h3>💡 Soluciones Tecnológicas</h3>
+        <p>Desarrollo de software, hardware y herramientas aplicadas a la industria, educación y gestión tecnológica. Prototipos funcionales y sistemas personalizados.</p>
+      </div>
+      <div class="card">
+        <h3>🧩 Diseños & Modelos</h3>
+        <p>Modelos predictivos, simulaciones y herramientas digitales para ingeniería, control de procesos e inteligencia artificial aplicada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Proyectos de Investigación ===== -->
+  <section class="section">
+    <h2>Proyectos de Investigación</h2>
     <div class="grid">
       <div class="card">
-        <h3>Proyecto 1</h3>
-        <p>Desarrollo de sistema IoT aplicado a monitoreo ambiental.</p>
+        <h3>Modelado térmico de celdas solares</h3>
+        <p>Estudio de comportamiento térmico y eficiencia energética bajo condiciones reales mediante simulación y validación experimental.</p>
+        <p><strong>Laboratorio:</strong> Technology and Engineering Laboratory (TEL)</p>
       </div>
       <div class="card">
-        <h3>Proyecto 2</h3>
-        <p>Prototipo de robot educativo para enseñanza de robótica y programación.</p>
+        <h3>Optimización de algoritmos de control PID adaptativo</h3>
+        <p>Desarrollo de estrategias de control inteligente con aprendizaje automático para sistemas dinámicos.</p>
+        <p><strong>Colaboración:</strong> Universidad Nacional de San Antonio Abad del Cusco</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Soluciones Tecnológicas ===== -->
+  <section class="section highlight">
+    <h2>Soluciones Tecnológicas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Plataforma IoT para monitoreo de energía</h3>
+        <p>Desarrollo de una plataforma en la nube para monitorear el consumo energético en tiempo real en pequeñas industrias.</p>
       </div>
       <div class="card">
-        <h3>Proyecto 3</h3>
-        <p>Investigación en control inteligente usando Deep Reinforcement Learning.</p>
+        <h3>Aplicación de análisis predictivo</h3>
+        <p>Software basado en machine learning para mantenimiento predictivo en sistemas electromecánicos.</p>
+      </div>
+      <div class="card">
+        <h3>Sistema inteligente de riego automatizado</h3>
+        <p>Prototipo con sensores de humedad y temperatura controlado por microcontrolador y comunicación Wi-Fi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Diseños y Modelos ===== -->
+  <section class="section">
+    <h2>Diseños y Modelos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Simulación de sistemas no lineales</h3>
+        <p>Implementación de modelos matemáticos avanzados para la simulación de sistemas dinámicos complejos.</p>
+      </div>
+      <div class="card">
+        <h3>Modelo digital de predicción de temperatura</h3>
+        <p>Creación de un modelo predictivo mediante regresión multivariable aplicado al análisis climático en Cusco.</p>
+      </div>
+      <div class="card">
+        <h3>Interfaz gráfica para control de procesos</h3>
+        <p>Desarrollo de dashboards interactivos para visualizar datos industriales en tiempo real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Colaboraciones ===== -->
+  <section class="section">
+    <h2>Colaboraciones y Convenios</h2>
+    <p>EM Research & Tech impulsa alianzas con instituciones académicas, centros de innovación y empresas del sector tecnológico. Estas colaboraciones fortalecen la transferencia de conocimiento y el impacto regional.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Universidades</h3>
+        <p>Participación en proyectos conjuntos, asesorías de tesis y desarrollo de investigación aplicada.</p>
+      </div>
+      <div class="card">
+        <h3>Empresas Tecnológicas</h3>
+        <p>Desarrollo de soluciones a medida e implementación de procesos de automatización y monitoreo.</p>
+      </div>
+      <div class="card">
+        <h3>Organismos Públicos</h3>
+        <p>Asistencia técnica en proyectos de desarrollo sostenible, educación e innovación territorial.</p>
       </div>
     </div>
   </section>
 </main>
 
+<!-- ===== Footer ===== -->
 <footer>
+  <p>✉ contacto@emresearchtech.com | 📞 +51 973400884</p>
   <p>© 2025 EM Research & Tech</p>
 </footer>
 

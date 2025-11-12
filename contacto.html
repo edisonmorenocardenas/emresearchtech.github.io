@@ -3,41 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - EM Research & Tech</title>
+  <title>Contáctanos | EM Research & Tech</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- ===== Navbar ===== -->
 <header class="navbar">
   <a href="index.html" class="logo">
     <img src="assets/img/logo.png" alt="Logo EM Research & Tech" class="logo-img">
-    EM Research & Tech
+    <h1>EM</h1> Research <br> & Tech
   </a>
   <ul class="menu">
+    <li><a href="index.html">Inicio</a></li>
     <li><a href="nosotros.html">Nosotros</a></li>
     <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="research.html">Research</a></li>
     <li><a href="portafolio.html">Portafolio</a></li>
     <li><a href="contacto.html" class="active button-primary">Contáctanos</a></li>
   </ul>
 </header>
 
+<!-- ===== Main ===== -->
 <main>
-  <section class="section">
-    <h2>Contáctanos</h2>
-    <p>Estamos listos para colaborar contigo en investigación, desarrollo tecnológico y consultoría.</p>
-    <ul>
-      <li>✉ Email: contacto@emresearchtech.com</li>
-      <li>📞 Teléfono: +51 973400884</li>
-      <li>🏢 Dirección: Av. La Cultura S/N, Cusco, Perú</li>
-    </ul>
+  <!-- ===== Hero ===== -->
+  <section class="hero small">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes una idea, proyecto o colaboración en mente? En EM Research & Tech te ayudamos a hacerla realidad.</p>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="section contact-section">
+    <div class="grid two-cols">
+      <!-- ===== Formulario ===== -->
+      <div class="contact-form">
+        <h2>Escríbenos</h2>
+        <p>Déjanos un mensaje y te responderemos a la brevedad posible.</p>
+        <form action="mailto:contacto@emresearchtech.com" method="post" enctype="text/plain">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" placeholder="Tema del mensaje" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+          <button type="submit" class="btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+
+      <!-- ===== Información de contacto ===== -->
+      <div class="contact-info">
+        <h2>Información de Contacto</h2>
+        <ul>
+          <li>📧 <strong>Correo:</strong> <a href="mailto:edison.moreno@emresearchtech.com">edison.moreno@emresearchtech.com</a></li>
+          <li>📍 <strong>Ubicación:</strong> Cusco, Perú</li>
+          <li>📞 <strong>Teléfono:</strong> +51 973 400 884</li>
+        </ul>
+
+        <h3>Laboratorio Principal</h3>
+        <p><strong>Technology and Engineering Laboratory (TEL)</strong><br>
+        Investigación, desarrollo tecnológico y modelamiento aplicado.</p>
+
+        <h3>Redes y enlaces</h3>
+        <div class="social-links">
+          <a href="#" title="LinkedIn">🔗 LinkedIn</a>
+          <a href="#" title="GitHub">💻 GitHub</a>
+          <a href="#" title="YouTube">🎥 YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Ubicación (Mapa opcional) ===== -->
+  <section class="section map-section">
+    <h2>Ubicación Referencial</h2>
+    <p>EM Research & Tech se encuentra en Cusco, Perú, con alcance nacional e internacional mediante proyectos y colaboraciones.</p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387143.831006743!2d-71.9869798!3d-13.5319506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd67427a3f0c3%3A0x1816b486b16ce6c1!2sCusco!5e0!3m2!1ses-419!2spe!4v1679023800000"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== Mensaje final ===== -->
+  <section class="section highlight">
+    <h2>Colaboremos en innovación</h2>
+    <p>En <strong>EM Research & Tech</strong> creemos que la colaboración entre la ciencia, la ingeniería y la gestión tecnológica es el camino hacia el progreso sostenible.  
+    Escríbenos, propón tu idea y trabajemos juntos.</p>
   </section>
 </main>
 
+<!-- ===== Footer ===== -->
 <footer>
-  <p>© 2025 EM Research & Tech</p>
-</footer>
-
-</body>
-</html>
+  <p>✉ contacto@emresearchtech.com | 📞 +51 97340
