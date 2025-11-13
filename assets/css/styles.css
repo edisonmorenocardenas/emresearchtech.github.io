@@ -55,6 +55,10 @@ body {
   font-weight: normal;
 }
 
+
+
+
+
 /* --- Sección inferior: menú debajo del nombre --- */
 .navbar-bottom {
   margin-top: 0.6rem;
@@ -259,4 +263,35 @@ footer a:hover {
   .section {
     padding: 2.5rem 1rem;
   }
+}
+
+
+/* ===== Collaborations and Partnerships ===== */
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.partners-logos img {
+  height: 80px;   /* Altura base uniforme */
+  width: auto;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+
+/* Ajuste fino para cada logo */
+.partners-logos img[alt="UNSAAC"] {
+  height: 85px; /* ligeramente más grande */
+}
+
+.partners-logos img[alt="UPV"] {
+  height: 65px; /* reduce UPV para igualar visualmente */
 }
