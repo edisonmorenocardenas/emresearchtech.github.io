@@ -416,3 +416,16 @@ footer a:hover {
     padding: 2rem;
   }
 }
+
+
+
+.social-links img.social-icon {
+  width: 32px;        /* tamaño del icono */
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-links img.social-icon:hover {
+  transform: scale(1.12);
+}
