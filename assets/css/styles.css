@@ -295,3 +295,124 @@ footer a:hover {
 .partners-logos img[alt="UPV"] {
   height: 65px; /* reduce UPV para igualar visualmente */
 }
+
+
+
+/* ===== Contact Section (Formulario de "Write to us") ===== */
+
+.contact-section {
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.contact-section .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ---- Formulario ---- */
+.contact-form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.contact-form h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+  color: #0047AB;
+}
+
+.contact-form p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1.4rem;
+  background: #f9f9f9;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0047AB;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 71, 171, 0.3);
+}
+
+.btn-primary {
+  width: 100%;
+  background: #0047AB;
+  color: white;
+  padding: 0.9rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0066cc;
+  transform: translateY(-2px);
+}
+
+/* ---- Información de contacto ---- */
+.contact-info h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #0047AB;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .contact-section .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+}
