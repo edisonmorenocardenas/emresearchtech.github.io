@@ -124,7 +124,7 @@ body {
 .hero .btn-primary {
   background: white;
   color: #0047AB;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
   font-weight: bold;
@@ -428,4 +428,8 @@ footer a:hover {
 
 .social-links img.social-icon:hover {
   transform: scale(1.12);
+}
+
+a {
+  text-decoration: none !important;  /* Esto elimina el subrayado en todos los enlaces */
 }
