@@ -420,8 +420,8 @@ footer a:hover {
 
 
 .social-links img.social-icon {
-  width: 20px;   /* más pequeño */
-  height: 20px;
+  width: 30px;   /* más pequeño */
+  height: 30px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
