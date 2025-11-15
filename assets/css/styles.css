@@ -430,6 +430,3 @@ footer a:hover {
   transform: scale(1.12);
 }
 
-a {
-  text-decoration: none !important;  /* Esto elimina el subrayado en todos los enlaces */
-}
