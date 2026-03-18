@@ -1,23 +1,23 @@
 /* ===== Estilos generales ===== */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  color: #222;
-  background: #f7f9fc;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  background: #ffffff;
 }
 
 /* ===== Navbar ===== */
 .navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  background: #ffffff;
-  border-bottom: 2px solid #eaeaea;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 1.2rem 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
 }
 
 /* --- Sección superior: logo + nombre --- */
@@ -29,7 +29,7 @@ body {
 }
 
 .logo-img {
-  width: 300px !important;
+  width: 160px;
   height: auto !important;
   transition: transform 0.3s ease;
 }
@@ -159,12 +159,16 @@ h2 {
   gap: 1.5rem;
 }
 
-.card {
-  background: #f7f9fc;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card-modern {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.card-modern:hover {
+  transform: translateY(-8px);
 }
 
 .card h3 {
@@ -179,10 +183,9 @@ h2 {
 /* ===== Footer ===== */
 footer {
   text-align: center;
-  background: #0047AB;
-  color: white;
-  padding: 3rem 1rem;
-  margin-top: 3rem;
+  padding: 60px 20px;
+  background: #111;
+  color: #aaa;
   font-size: 0.9rem;
 }
 
@@ -428,5 +431,69 @@ footer a:hover {
 
 .social-links img.social-icon:hover {
   transform: scale(1.12);
+}
+
+/* CAMBIOS */
+
+.hero-modern {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-modern h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  max-width: 800px;
+}
+
+.hero-modern p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+/* ✅ D. EL CAMBIO MÁS IMPORTANTE: SECCIONES */
+
+.section-modern {
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.gray-bg {
+  background: #f5f5f7;
+}
+
+/* ✅ E. NUEVO SISTEMA DE GRID (MEJOR QUE EL TUYO) */
+
+.grid-3-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+/*✅ G. SECCIÓN NEGRA (IMPACTO VISUAL) */
+
+.highlight-modern {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.highlight-modern p {
+  color: #ccc;
 }
 
