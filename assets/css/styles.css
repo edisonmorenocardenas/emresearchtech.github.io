@@ -43,6 +43,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 100;
+  padding-bottom: 10px;
 }
 
 .navbar-top {
@@ -59,7 +60,7 @@ p {
 }
 
 .navbar-bottom {
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 /* ===== MENU ===== */
@@ -118,7 +119,7 @@ p {
   background: linear-gradient(to right, #0047AB, #0066cc);
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 90px 20px;
 }
 
 .hero.small {
@@ -126,7 +127,7 @@ p {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   max-width: 800px;
   margin: auto;
 }
@@ -134,7 +135,17 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-top: 1rem;
-  color: white; /* 🔥 FORZADO A BLANCO */
+  color: rgba(255,255,255,0.9); /* 🔥 mejor que blanco puro */
+}
+
+/* 🔥 NUEVO: subtítulo más profesional */
+.hero-subtitle {
+  font-size: 1.15rem;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255,255,255,0.85);
 }
 
 /* ===== SECCIONES ===== */
@@ -216,7 +227,7 @@ footer {
 }
 
 footer p {
-  color: white !important; /* 🔥 FORZADO A BLANCO */
+  color: white !important;
 }
 
 /* ===== RESPONSIVE ===== */
