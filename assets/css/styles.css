@@ -187,7 +187,9 @@ p {
 }
 
 .publication-thumbs img {
-  width: 144px; /* Incrementado 20% */
+  width: 144px;       /* ancho uniforme */
+  height: 144px;      /* alto uniforme */
+  object-fit: cover;  /* recorta sin deformar */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
@@ -297,7 +299,9 @@ footer p {
   }
 
   .publication-thumbs img {
-    width: 108px; /* 144px × 0.75 en móviles */
+    width: 108px;      /* ancho móvil */
+    height: 108px;     /* alto móvil */
+    object-fit: cover;  /* recorte uniforme */
   }
 
   .section {
