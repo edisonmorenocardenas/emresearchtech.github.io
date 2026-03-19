@@ -50,32 +50,34 @@
 
       <div class="grid grid-3">
 
-        <!-- FORM -->
+        <!-- ===== FORM ===== -->
         <div class="card" style="grid-column: span 2;">
 
           <h2>Write to us</h2>
-          <p>Leave us a message and we will respond as soon as possible.</p>
+          <p style="margin-bottom:20px;">
+            Leave us a message and we will respond as soon as possible.
+          </p>
 
           <form action="mailto:edison.moreno@emresearchtech.com" method="post" enctype="text/plain">
 
             <label>Full name</label>
-            <input type="text" name="nombre" required>
+            <input type="text" name="nombre" required style="width:100%; padding:10px; margin:8px 0 15px; border-radius:6px; border:1px solid #ccc;">
 
             <label>Email address</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" required style="width:100%; padding:10px; margin:8px 0 15px; border-radius:6px; border:1px solid #ccc;">
 
             <label>Subject</label>
-            <input type="text" name="asunto" required>
+            <input type="text" name="asunto" required style="width:100%; padding:10px; margin:8px 0 15px; border-radius:6px; border:1px solid #ccc;">
 
             <label>Message</label>
-            <textarea name="mensaje" rows="5" required></textarea>
+            <textarea name="mensaje" rows="5" required style="width:100%; padding:10px; margin:8px 0 20px; border-radius:6px; border:1px solid #ccc;"></textarea>
 
             <button type="submit" class="btn-primary">Send message</button>
 
           </form>
         </div>
 
-        <!-- INFO -->
+        <!-- ===== INFO ===== -->
         <div class="card">
 
           <h2>Contact Info</h2>
@@ -99,9 +101,11 @@
             Research & development, modelling, and innovation.
           </p>
 
-          <div style="margin-top:20px;">
+          <!-- ICONO MEJORADO -->
+          <div style="margin-top:20px; text-align:center;">
             <a href="https://www.linkedin.com/company/emresearchtech/" target="_blank">
-              <img src="assets/img/linkedin.png" alt="LinkedIn" style="height:30px;">
+              <img src="assets/img/linkedin.png" alt="LinkedIn" 
+                   style="height:28px; opacity:0.8; transition:0.3s;">
             </a>
           </div>
 
@@ -123,9 +127,10 @@
         and internationally through research and innovation projects.
       </p>
 
-      <div style="margin-top:30px;">
+      <!-- MAPA CORRECTO (EMBED) -->
+      <div style="margin-top:30px; border-radius:12px; overflow:hidden;">
         <iframe 
-          src="https://maps.app.goo.gl/qy7tLmTB2RkwnWFF8"
+          src="https://www.google.com/maps?q=Cusco,Peru&output=embed"
           width="100%" 
           height="350" 
           style="border:0;"
