@@ -313,3 +313,12 @@ footer p {
 .text-center {
   text-align: center;
 }
+
+.member-link {
+  color: #1d1d1f; /* mismo color que h3 por defecto */
+  text-decoration: none; /* opcional: quita subrayado */
+}
+
+.member-link:hover {
+  color: #0047AB; /* opcional: color al pasar el mouse */
+}
