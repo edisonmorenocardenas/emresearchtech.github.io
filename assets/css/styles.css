@@ -1,5 +1,4 @@
-
-/* ===== ESTILOS GENERALES ===== */
+/* ===== Estilos generales ===== */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -7,38 +6,64 @@ body {
   background: #f7f9fc;
 }
 
-/* ===== CONTENEDOR CENTRAL (NUEVO - CLAVE) ===== */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* ===== NAVBAR ===== */
+/* ===== Navbar ===== */
 .navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-bottom: 2px solid #eaeaea;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
   z-index: 100;
   padding: 1rem 0;
 }
 
-/* ===== LOGO ===== */
+/* --- Sección superior: logo + nombre --- */
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .logo-img {
-  width: 180px;
-  height: auto;
+  width: 300px !important;
+  height: auto !important;
   transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
-/* ===== MENÚ ===== */
+.logo-text {
+  text-align: center;
+}
+
+.logo-text h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #0047AB;
+}
+
+.logo-text h3 {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.2rem;
+  font-weight: normal;
+}
+
+
+
+
+
+/* --- Sección inferior: menú debajo del nombre --- */
+.navbar-bottom {
+  margin-top: 0.6rem;
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -54,7 +79,7 @@ body {
   font-weight: bold;
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
-  transition: 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 .menu li a.active,
@@ -63,7 +88,7 @@ body {
   color: white;
 }
 
-/* ===== BOTÓN ===== */
+/* ===== Botón primario ===== */
 .button-primary {
   background: #0047AB;
   color: white !important;
@@ -71,68 +96,75 @@ body {
   border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
 .button-primary:hover {
   background: #0066cc;
 }
 
-/* ===== HERO ===== */
+/* ===== Hero ===== */
 .hero {
   text-align: center;
-  padding: 7rem 2rem;
+  padding: 6rem 2rem;
   background: linear-gradient(to bottom right, #0047AB, #87CEEB);
   color: white;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.3rem;
-  max-width: 700px;
-  margin: auto;
+  margin-bottom: 2rem;
 }
 
-/* ===== SECCIONES ===== */
-.section {
-  padding: 5rem 2rem;
-  margin: 3rem auto;
+.hero .btn-primary {
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  color: #0047AB;
+  text-decoration: none !important;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* ===== TÍTULOS ===== */
+.hero .btn-primary:hover {
+  background: #0047AB;
+  color: white;
+}
+
+/* ===== Secciones ===== */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
 h2 {
   text-align: center;
   margin-bottom: 2rem;
   color: #0047AB;
-  font-size: 2.2rem;
 }
 
-p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-/* ===== GRID ===== */
-.grid-3 {
+/* ===== Grid de tarjetas ===== */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
-/* ===== CARDS ===== */
 .card {
   background: #f7f9fc;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card h3 {
@@ -140,20 +172,101 @@ p {
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== SECCIÓN OSCURA ===== */
-.highlight {
-  background: #111;
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: #0047AB;
   color: white;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
 }
 
-.highlight p {
-  color: #ccc;
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
-/* ===== LOGOS ===== */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* ===== Members (TEL) ===== */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.member-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #0047AB;
+}
+
+.member-links {
+  margin-top: 0.8rem;
+}
+
+.member-links a {
+  color: #0047AB;
+  text-decoration: none;
+  margin: 0 0.4rem;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.member-links a:hover {
+  color: #0066cc;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 55px;
+  }
+
+  .logo-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+}
+
+
+/* ===== Collaborations and Partnerships ===== */
 .partners-logos {
   display: flex;
   justify-content: center;
@@ -164,24 +277,29 @@ p {
 }
 
 .partners-logos img {
-  height: 75px;
-  transition: transform 0.3s;
+  height: 80px;   /* Altura base uniforme */
+  width: auto;
+  transition: transform 0.3s ease;
+  object-fit: contain;
 }
 
 .partners-logos img:hover {
   transform: scale(1.08);
 }
 
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  background: #0047AB;
-  color: white;
-  padding: 3rem 1rem;
-  margin-top: 3rem;
+/* Ajuste fino para cada logo */
+.partners-logos img[alt="UNSAAC"] {
+  height: 85px; /* ligeramente más grande */
 }
 
-/* ===== CONTACT ===== */
+.partners-logos img[alt="UPV"] {
+  height: 65px; /* reduce UPV para igualar visualmente */
+}
+
+
+
+/* ===== Contact Section (Formulario de "Write to us") ===== */
+
 .contact-section {
   padding: 4rem 2rem;
   background: white;
@@ -194,24 +312,120 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  align-items: start;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .logo-img {
-    width: 120px;
+/* ---- Formulario ---- */
+.contact-form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.contact-form h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+  color: #0047AB;
+}
+
+.contact-form p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1.4rem;
+  background: #f9f9f9;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0047AB;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 71, 171, 0.3);
+}
+
+.btn-primary {
+  width: 100%;
+  background: #0047AB;
+  color: white;
+  padding: 0.9rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0066cc;
+  transform: translateY(-2px);
+}
+
+/* ---- Información de contacto ---- */
+.contact-info h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #0047AB;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .contact-section .grid {
+    grid-template-columns: 1fr;
   }
 
-  .menu {
-    flex-wrap: wrap;
-    gap: 0.8rem;
+  .contact-form {
+    padding: 2rem;
   }
+}
 
-  .hero h1 {
-    font-size: 2.2rem;
-  }
 
-  .section {
-    padding: 3rem 1rem;
-  }
+
+.social-links img.social-icon {
+  width: 30px;   /* más pequeño */
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-links img.social-icon:hover {
+  transform: scale(1.12);
 }
