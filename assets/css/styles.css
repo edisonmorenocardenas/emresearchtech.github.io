@@ -315,10 +315,10 @@ footer p {
 }
 
 .member-link {
-  color: #1d1d1f; /* mismo color que h3 por defecto */
-  text-decoration: none; /* opcional: quita subrayado */
+  color: #0047AB; /* mismo color que h3 */
+  text-decoration: none; /* opcional */
 }
 
 .member-link:hover {
-  color: #0047AB; /* opcional: color al pasar el mouse */
+  color: #0066cc; /* opcional: color hover */
 }
