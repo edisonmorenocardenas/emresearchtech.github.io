@@ -8,26 +8,34 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ===== NAVBAR ===== -->
 <header class="navbar">
-  <img src="assets/img/logo2.png" class="logo-img">
 
-  <ul class="menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="nosotros.html">About Us</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="servicios.html">Services</a></li>
-    <li><a href="portafolio.html">Portfolio</a></li>
-    <li><a href="contacto.html" class="btn">Contact</a></li>
-  </ul>
+  <div class="navbar-top">
+    <a href="index.html">
+      <img src="assets/img/logo2.png" class="logo-img">
+    </a>
+  </div>
+
+  <nav class="navbar-bottom">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="nosotros.html">About Us</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="servicios.html">Services</a></li>
+      <li><a href="portafolio.html">Portfolio</a></li>
+      <li><a href="contacto.html" class="button-primary">Contact Us</a></li>
+    </ul>
+  </nav>
+
 </header>
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero" style="background:#f5f7fa; color:#111;">
+  <!-- ===== HERO ===== -->
+  <section class="hero">
     <div class="container">
-      <h1 style="color:#0047AB;">Research & Development</h1>
+      <h1>Research & Development</h1>
       <p>
         We explore the boundaries between engineering, applied science, and emerging technology
         to build real, measurable solutions.
@@ -35,14 +43,16 @@
     </div>
   </section>
 
-  <!-- INTRO -->
+  <!-- ===== INTRO ===== -->
   <section class="section">
-    <div class="container">
+    <div class="container narrow">
       <h2>Research Area</h2>
+
       <p>
         The research area at <strong>EM Research & Tech</strong> develops scientific and technological
         projects focused on applied innovation.
       </p>
+
       <p>
         Our work integrates modelling, experimental design, artificial intelligence,
         electronics, automation, and telecommunications.
@@ -50,17 +60,17 @@
     </div>
   </section>
 
-  <!-- TEG -->
+  <!-- ===== TEG ===== -->
   <section class="section alt">
     <div class="container">
       <h2>Technology and Engineering Group (TEG)</h2>
 
-      <p>
+      <p style="text-align:center; max-width:800px; margin:auto;">
         The <strong>TEG</strong> develops models, prototypes, and experimental validations
         that integrate science and engineering, transforming theory into real solutions.
       </p>
 
-      <div class="grid grid-2">
+      <div class="grid grid-3" style="margin-top:40px;">
 
         <div class="card">
           <h3>Lines of Research</h3>
@@ -81,29 +91,39 @@
           </p>
         </div>
 
+        <div class="card">
+          <h3>Impact</h3>
+          <p>
+            Our goal is to generate technological solutions applicable to industry,
+            education and scientific research with measurable impact.
+          </p>
+        </div>
+
       </div>
 
       <div style="text-align:center; margin-top:40px;">
-        <a href="research/teg/TEG.html" class="btn">Explore TEG</a>
+        <a href="research/teg/TEG.html" class="btn-primary">Explore TEG</a>
       </div>
 
     </div>
   </section>
 
-  <!-- FUTURE -->
+  <!-- ===== FUTURE ===== -->
   <section class="section">
-    <div class="container">
+    <div class="container narrow">
       <h2>Future Laboratories</h2>
+
       <p>
         EM Research & Tech plans to expand into new areas such as artificial intelligence,
         telecommunications, energy systems and sustainable technologies.
       </p>
+
     </div>
   </section>
 
 </main>
 
-<!-- FOOTER -->
+<!-- ===== FOOTER ===== -->
 <footer>
   <p>✉ edison.moreno@emresearchtech.com | +51 973400884</p>
   <p>© 2025 EM Research & Tech</p>
