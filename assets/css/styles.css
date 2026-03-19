@@ -115,70 +115,57 @@ p {
 }
 
 /* ===== HERO ===== */
-.hero {
+.hero-main {
   position: relative;
-  background: linear-gradient(to right, #0047AB, #0066cc);
-  color: white;
-  text-align: center;
-  padding: 90px 20px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
-.hero.small {
-  padding: 70px 20px;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  max-width: 800px;
-  margin: auto;
-  z-index: 1;
-  position: relative;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  color: rgba(255,255,255,0.9); /* 🔥 mejor que blanco puro */
-  position: relative;
-  z-index: 1;
-}
-
-/* 🔥 NUEVO: subtítulo más profesional */
-.hero-subtitle {
-  font-size: 1.15rem;
-  margin-top: 1rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgba(255,255,255,0.85);
-  position: relative;
-  z-index: 1;
-}
-
-/* ===== HERO VIDEO Y OVERLAY ===== */
-.hero-video {
+/* Video de fondo */
+.hero-main .hero-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 300px; /* Solo parte superior con video */
   object-fit: cover;
   z-index: 0;
 }
 
-.hero-overlay {
+/* Overlay con contenido sobre fondo azul */
+.hero-main .hero-overlay {
   position: relative;
+  background: linear-gradient(to bottom, rgba(0,71,171,0.9), #0047AB); /* azul sólido */
+  padding: 40px 20px 60px 20px;
+  margin-top: 300px; /* desplazado debajo del video */
+  text-align: center;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 
+.hero-main .hero-overlay h1 {
+  color: white;
+  font-size: 2.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-main .hero-overlay p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+.hero-main .hero-overlay .btn-primary {
+  margin-top: 20px;
+}
+
 /* Miniaturas publicaciones recientes */
-.publication-thumbs {
+.hero-main .publication-thumbs {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
@@ -186,14 +173,14 @@ p {
   margin-top: 20px;
 }
 
-.publication-thumbs img {
+.hero-main .publication-thumbs img {
   width: 120px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
-.publication-thumbs img:hover {
+.hero-main .publication-thumbs img:hover {
   transform: scale(1.05);
 }
 
@@ -288,11 +275,11 @@ footer p {
     gap: 10px;
   }
 
-  .hero h1 {
-    font-size: 2rem;
+  .hero-main .hero-overlay h1 {
+    font-size: 1.8rem;
   }
 
-  .hero p {
+  .hero-main .hero-overlay p {
     font-size: 1rem;
   }
 
