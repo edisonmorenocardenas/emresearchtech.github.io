@@ -3,116 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contáctanos | EM Research & Tech</title>
+  <title>Contact | EM Research & Tech</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<!-- ===== Navbar ===== -->
+<!-- ===== NAVBAR ===== -->
 <header class="navbar">
-  <!-- Logo y nombre -->
-  <a href="index.html" class="logo">
-    <img src="assets/img/logo2.png" alt="Logo EM Research & Tech" class="logo-img">
-<!-- 
-    <h1>EM Research & Tech</h1>
-    <h3>Engineering–Management Research & Technology</h3>
--->
-  </a>
 
+  <div class="navbar-top">
+    <a href="index.html">
+      <img src="assets/img/logo2.png" alt="Logo EM Research & Tech" class="logo-img">
+    </a>
+  </div>
 
-  <!-- Menú de navegación -->
-  <ul class="menu">
-      <li><a href="index.html" class="active">Home</a></li>
+  <nav class="navbar-bottom">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
       <li><a href="nosotros.html">About Us</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="servicios.html">Services</a></li>
       <li><a href="portafolio.html">Portfolio</a></li>
-      <li><a href="contacto.html" class="button-primary">Contact Us</a></li>
+      <li><a href="contacto.html" class="active button-primary">Contact Us</a></li>
     </ul>
+  </nav>
+
 </header>
 
-<!-- ===== Main ===== -->
+<!-- ===== MAIN ===== -->
 <main>
-  <!-- ===== Hero ===== -->
+
+  <!-- ===== HERO ===== -->
   <section class="hero small">
-    <h1>Contact us</h1>
-    <p>Do you have an idea, project, or collaboration in mind? <br>
-      At EM Research & Tech, we help you make it happen.</p>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>
+        Do you have an idea, project, or collaboration in mind?<br>
+        We help you make it happen.
+      </p>
+    </div>
   </section>
 
-  <!-- ===== Contact Section ===== -->
-  <section class="section contact-section">
-    <div class="grid two-cols">
-      <!-- ===== Formulario ===== -->
-      <div class="contact-form">
-        <h2>Write to us</h2>
-        <p>Leave us a message and we will respond as soon as possible.</p>
-        <form action="mailto:edison.moreno@emresearchtech.com" method="post" enctype="text/plain">
-          <label for="nombre">Full name</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+  <!-- ===== CONTACT ===== -->
+  <section class="section">
+    <div class="container">
 
-          <label for="email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+      <div class="grid grid-3">
 
-          <label for="asunto">Subject</label>
-          <input type="text" id="asunto" name="asunto" placeholder="Tema del mensaje" required>
+        <!-- FORM -->
+        <div class="card" style="grid-column: span 2;">
 
-          <label for="mensaje">Message</label>
-          <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <h2>Write to us</h2>
+          <p>Leave us a message and we will respond as soon as possible.</p>
 
-          <button type="submit" class="btn-primary">Send message</button>
-        </form>
-      </div>
+          <form action="mailto:edison.moreno@emresearchtech.com" method="post" enctype="text/plain">
 
-      <!-- ===== Información de contacto ===== -->
-      <div class="contact-info">
-        <h2>Contact Information</h2>
-        <ul>
-          <li> <strong>Email:</strong> <a href="mailto:edison.moreno@emresearchtech.com">edison.moreno@emresearchtech.com</a></li>
-          <li> <strong>Location:</strong> Cusco, Peru</li>
-          <li> <strong>Phone:</strong> +51 973 400 884</li>
-        </ul>
+            <label>Full name</label>
+            <input type="text" name="nombre" required>
 
-        <h3>Main Group</h3>
-        <p><strong>Technology and Engineering Group (TEG)</strong><br>
-        Research, technological development, and applied modelling.</p>
+            <label>Email address</label>
+            <input type="email" name="email" required>
 
-        <h3>Networks and links</h3>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/company/emresearchtech/" target="_blank">
-  <img src="assets/img/linkedin.png" alt="LinkedIn" class="social-icon"> 
-</a>
-       <!--   <a href="#" title="GitHub">💻 GitHub</a>
-          <a href="#" title="YouTube">🎥 YouTube</a>
-        -->
+            <label>Subject</label>
+            <input type="text" name="asunto" required>
+
+            <label>Message</label>
+            <textarea name="mensaje" rows="5" required></textarea>
+
+            <button type="submit" class="btn-primary">Send message</button>
+
+          </form>
         </div>
+
+        <!-- INFO -->
+        <div class="card">
+
+          <h2>Contact Info</h2>
+
+          <p><strong>Email:</strong><br>
+          <a href="mailto:edison.moreno@emresearchtech.com">
+            edison.moreno@emresearchtech.com
+          </a></p>
+
+          <p><strong>Location:</strong><br>
+          Cusco, Peru</p>
+
+          <p><strong>Phone:</strong><br>
+          +51 973 400 884</p>
+
+          <hr style="margin:20px 0;">
+
+          <h3>Main Group</h3>
+          <p>
+            Technology and Engineering Group (TEG)<br>
+            Research & development, modelling, and innovation.
+          </p>
+
+          <div style="margin-top:20px;">
+            <a href="https://www.linkedin.com/company/emresearchtech/" target="_blank">
+              <img src="assets/img/linkedin.png" alt="LinkedIn" style="height:30px;">
+            </a>
+          </div>
+
+        </div>
+
       </div>
+
     </div>
   </section>
 
-  <!-- ===== Ubicación (Mapa opcional) ===== -->
-  <section class="section map-section">
-    <h2>Reference location</h2>
-    <p>EM Research & Tech is located in Cusco, Peru, and has national and 
-      international reach through projects and collaborations.</p>
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387143.831006743!2d-71.9869798!3d-13.5319506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd67427a3f0c3%3A0x1816b486b16ce6c1!2sCusco!5e0!3m2!1ses-419!2spe!4v1679023800000"
-        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
+  <!-- ===== MAP ===== -->
+  <section class="section alt">
+    <div class="container">
+
+      <h2>Reference Location</h2>
+
+      <p style="text-align:center; max-width:700px; margin:auto;">
+        EM Research & Tech is located in Cusco, Peru, and operates nationally 
+        and internationally through research and innovation projects.
+      </p>
+
+      <div style="margin-top:30px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387143.831006743!2d-71.9869798!3d-13.5319506"
+          width="100%" height="350" style="border:0;" loading="lazy">
+        </iframe>
+      </div>
+
     </div>
   </section>
 
-  <!-- ===== Mensaje final ===== -->
-  <section class="section highlight">
-    <h2>Let's collaborate on innovation</h2>
-    <p>In <strong>EM Research & Tech</strong> we believe that collaboration between science, 
-      engineering, and technology management is the path to sustainable progress. 
-      Please write to us, propose your idea, and let's work together.</p>
+  <!-- ===== CTA FINAL ===== -->
+  <section class="hero small">
+    <div class="container">
+      <h2>Let's collaborate on innovation</h2>
+      <p>
+        We believe that collaboration between science, engineering, 
+        and technology is the path to sustainable progress.
+      </p>
+    </div>
   </section>
+
 </main>
 
-<!-- ===== Footer ===== -->
+<!-- ===== FOOTER ===== -->
 <footer>
   <p>✉ edison.moreno@emresearchtech.com | +51 973400884</p>
   <p>© 2025 EM Research & Tech</p>
