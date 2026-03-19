@@ -3,145 +3,223 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio | EM Research & Tech</title>
+  <title>Portfolio | EM Research & Tech</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<!-- ===== Navbar ===== -->
+<!-- ===== NAVBAR ===== -->
 <header class="navbar">
-  <!-- Logo y nombre -->
-  <a href="index.html" class="logo">
-    <img src="assets/img/logo2.png" alt="Logo EM Research & Tech" class="logo-img">
-<!-- 
-    <h1>EM Research & Tech</h1>
-    <h3>Engineering–Management Research & Technology</h3>
--->
-  </a>
 
-  <!-- Menú de navegación -->
-  <ul class="menu">
-      <li><a href="index.html" class="active">Home</a></li>
+  <div class="navbar-top">
+    <a href="index.html">
+      <img src="assets/img/logo2.png" alt="Logo EM Research & Tech" class="logo-img">
+    </a>
+  </div>
+
+  <nav class="navbar-bottom">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
       <li><a href="nosotros.html">About Us</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="servicios.html">Services</a></li>
-      <li><a href="portafolio.html">Portfolio</a></li>
+      <li><a href="portafolio.html" class="active">Portfolio</a></li>
       <li><a href="contacto.html" class="button-primary">Contact Us</a></li>
     </ul>
+  </nav>
+
 </header>
 
-<!-- ===== Main ===== -->
+<!-- ===== MAIN ===== -->
 <main>
-  <!-- ===== Encabezado ===== -->
+
+  <!-- ===== HERO ===== -->
   <section class="hero small">
-    <h1>Institutional Portfolio</h1>
-    <p>Research projects, technological solutions, 
-      and designs developed by EM Research & Tech and its laboratories.</p>
+    <div class="container">
+      <h1>Institutional Portfolio</h1>
+      <p>
+        Research projects, technological solutions, and designs developed 
+        by EM Research & Tech and its laboratories.
+      </p>
+    </div>
   </section>
 
-  <!-- ===== Categorías ===== -->
+  <!-- ===== CATEGORIES ===== -->
   <section class="section">
-    <h2>Portfolio Areas</h2>
-    <div class="grid three-cols">
-      <div class="card">
-        <h3> Research Projects</h3>
-        <p>Includes papers, scientific collaborations, and academic projects developed within the 
-          framework of the Technology and Engineering Group (TEG) and future research units.</p>
+    <div class="container">
+
+      <h2>Portfolio Areas</h2>
+
+      <div class="grid grid-3">
+
+        <div class="card">
+          <h3>Research Projects</h3>
+          <p>
+            Includes scientific publications, collaborations, and academic 
+            projects developed within the Technology and Engineering Group (TEG).
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Technological Solutions</h3>
+          <p>
+            Development of software, hardware, and applied tools for industry, 
+            education, and innovation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Designs & Models</h3>
+          <p>
+            Predictive models, simulations, and digital tools for engineering 
+            and applied artificial intelligence.
+          </p>
+        </div>
+
       </div>
-      <div class="card">
-        <h3> Technological Solutions</h3>
-        <p>Development of software, hardware, and tools applied to industry, education, and 
-          technology management. Functional prototypes and customized systems.</p>
-      </div>
-      <div class="card">
-        <h3> Designs & Models</h3>
-        <p>Predictive models, simulations, and digital tools for engineering, process control, 
-          and applied artificial intelligence.</p>
-      </div>
+
     </div>
   </section>
 
-  <!-- ===== Proyectos de Investigación ===== -->
+  <!-- ===== RESEARCH PROJECTS ===== -->
+  <section class="section alt">
+    <div class="container">
+
+      <h2>Research Projects</h2>
+
+      <div class="grid grid-3">
+
+        <div class="card">
+          <h3>Thermal Modelling of Solar Cells</h3>
+          <p>
+            Analysis of thermal behavior and efficiency using simulation 
+            and experimental validation.
+          </p>
+          <p><strong>Laboratory:</strong> TEG</p>
+        </div>
+
+        <div class="card">
+          <h3>Adaptive PID Control Optimization</h3>
+          <p>
+            Intelligent control strategies using machine learning 
+            for dynamic systems.
+          </p>
+          <p><strong>Collaboration:</strong> UNSAAC & UPV</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== TECHNOLOGICAL SOLUTIONS ===== -->
   <section class="section">
-    <h2>Research Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Thermal modelling of solar cells</h3>
-        <p>Study of thermal behavior and energy efficiency under real conditions through 
-          simulation and experimental validation.</p>
-        <p><strong>Laboratory:</strong> Technology and Engineering Group (TEG)</p>
+    <div class="container">
+
+      <h2>Technological Solutions</h2>
+
+      <div class="grid grid-3">
+
+        <div class="card">
+          <h3>IoT Energy Monitoring Platform</h3>
+          <p>
+            Cloud-based system for real-time energy monitoring 
+            in industrial environments.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Predictive Analysis Application</h3>
+          <p>
+            Machine learning software for predictive maintenance 
+            in electromechanical systems.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Smart Irrigation System</h3>
+          <p>
+            Automated irrigation prototype using sensors 
+            and wireless communication.
+          </p>
+        </div>
+
       </div>
-      <div class="card">
-        <h3>Optimization of adaptive PID control algorithms</h3>
-        <p>Development of intelligent control strategies with machine learning for dynamic systems.</p>
-        <p><strong>Collaboration:</strong> National University of San Antonio Abad del Cusco and Universitat Politècnica de València</p>
-      </div>
+
     </div>
   </section>
 
-  <!-- ===== Soluciones Tecnológicas ===== -->
-  <section class="section highlight">
-    <h2>Technological Solutions</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>IoT platform for energy monitoring</h3>
-        <p>Development of a cloud platform to monitor energy consumption in real time in small industries.</p>
+  <!-- ===== DESIGNS ===== -->
+  <section class="section alt">
+    <div class="container">
+
+      <h2>Designs and Models</h2>
+
+      <div class="grid grid-3">
+
+        <div class="card">
+          <h3>Non-linear System Simulation</h3>
+          <p>
+            Advanced modelling of complex dynamic systems.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Temperature Prediction Model</h3>
+          <p>
+            Multivariate regression applied to climate analysis.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Process Control Interface</h3>
+          <p>
+            Interactive dashboards for industrial data visualization.
+          </p>
+        </div>
+
       </div>
-      <div class="card">
-        <h3>Application of predictive analysis</h3>
-        <p>Machine learning-based software for predictive maintenance in electromechanical systems.</p>
-      </div>
-      <div class="card">
-        <h3>Intelligent automated irrigation system</h3>
-        <p>Prototype with humidity and temperature sensors controlled by a microcontroller 
-          and Wi-Fi communication.</p>
-      </div>
+
     </div>
   </section>
 
-  <!-- ===== Diseños y Modelos ===== -->
+  <!-- ===== COLLABORATIONS ===== -->
   <section class="section">
-    <h2>Designs and Models</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Simulation of non-linear systems</h3>
-        <p>Implementation of advanced mathematical models for the simulation of complex dynamic systems.</p>
+    <div class="container">
+
+      <h2>Collaborations and Agreements</h2>
+
+      <p style="text-align:center; max-width:700px; margin:auto;">
+        EM Research & Tech promotes partnerships with academic institutions, 
+        innovation centres, and technology companies to strengthen knowledge 
+        transfer and regional impact.
+      </p>
+
+      <div class="grid grid-3" style="margin-top:40px;">
+
+        <div class="card">
+          <h3>Universities</h3>
+          <p>Joint research, thesis supervision, and academic collaboration.</p>
+        </div>
+
+        <div class="card">
+          <h3>Technology Companies</h3>
+          <p>Development of tailored solutions and industrial innovation.</p>
+        </div>
+
+        <div class="card">
+          <h3>Public Organizations</h3>
+          <p>Technical support for sustainable development and innovation projects.</p>
+        </div>
+
       </div>
-      <div class="card">
-        <h3>Digital temperature prediction model</h3>
-        <p>Creation of a predictive model using multivariate regression applied to climate analysis in Cusco.</p>
-      </div>
-      <div class="card">
-        <h3>Graphical interface for process control</h3>
-        <p>Development of interactive dashboards to visualize industrial data in real time.</p>
-      </div>
+
     </div>
   </section>
 
-  <!-- ===== Colaboraciones ===== -->
-  <section class="section">
-    <h2>Collaborations and Agreements</h2>
-    <p>EM Research & Tech promotes partnerships with academic institutions, innovation centres, 
-      and companies in the technology sector. These collaborations strengthen knowledge transfer 
-      and regional impact.</p>
-    <div class="grid">
-      <div class="card">
-        <h3>Universities</h3>
-        <p>Participation in joint projects, thesis advising, and applied research development.</p>
-      </div>
-      <div class="card">
-        <h3>Technology Companies</h3>
-        <p>Development of customized solutions and implementation of automation and monitoring processes.</p>
-      </div>
-      <div class="card">
-        <h3>Public Organizartions</h3>
-        <p>Technical assistance in sustainable development, education, and territorial innovation projects.</p>
-      </div>
-    </div>
-  </section>
 </main>
 
-<!-- ===== Footer ===== -->
+<!-- ===== FOOTER ===== -->
 <footer>
   <p>✉ edison.moreno@emresearchtech.com | +51 973400884</p>
   <p>© 2025 EM Research & Tech</p>
