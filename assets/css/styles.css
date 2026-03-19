@@ -116,9 +116,15 @@ p {
 /* ===== HERO ===== */
 .hero {
   background: linear-gradient(to right, #0047AB, #0066cc);
-  color: white;
   text-align: center;
   padding: 100px 20px;
+}
+
+/* 🔥 FIX IMPORTANTE */
+.hero,
+.hero h1,
+.hero p {
+  color: white;
 }
 
 .hero.small {
@@ -136,14 +142,17 @@ p {
   margin-top: 1rem;
 }
 
-/* ===== HERO LIGHT (para páginas internas) ===== */
+/* ===== HERO LIGHT ===== */
 .hero-light {
   background: #f5f7fa;
-  color: #1d1d1f;
 }
 
 .hero-light h1 {
   color: #0047AB;
+}
+
+.hero-light p {
+  color: #555;
 }
 
 /* ===== SECCIONES ===== */
@@ -217,11 +226,16 @@ p {
 /* ===== FOOTER ===== */
 footer {
   background: #0047AB;
-  color: white;
   text-align: center;
   padding: 40px 20px;
   margin-top: 60px;
   font-size: 0.9rem;
+}
+
+/* 🔥 FIX IMPORTANTE */
+footer,
+footer p {
+  color: white;
 }
 
 /* ===== RESPONSIVE ===== */
