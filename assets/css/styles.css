@@ -139,7 +139,7 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-top: 1rem;
-  color: rgba(255,255,255,0.9); /* 🔥 mejor que blanco puro */
+  color: rgba(255,255,255,0.9);
   position: relative;
   z-index: 1;
 }
@@ -177,7 +177,7 @@ p {
   gap: 20px;
 }
 
-/* Miniaturas publicaciones recientes */
+/* ===== MINIATURAS PUBLICACIONES RECIENTES ===== */
 .publication-thumbs {
   display: flex;
   gap: 15px;
@@ -187,7 +187,7 @@ p {
 }
 
 .publication-thumbs img {
-  width: 120px;
+  width: 144px; /* Incrementado 20% */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
@@ -297,7 +297,7 @@ footer p {
   }
 
   .publication-thumbs img {
-    width: 90px;
+    width: 108px; /* 144px × 0.75 en móviles */
   }
 
   .section {
