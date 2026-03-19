@@ -116,36 +116,67 @@ p {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(to right, #0047AB, #0066cc);
+  position: relative;
   color: white;
   text-align: center;
+  overflow: hidden;
   padding: 90px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
 }
 
-.hero.small {
-  padding: 70px 20px;
+/* Video de fondo */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
+/* Overlay para contenido sobre el video */
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+/* Hero text */
 .hero h1 {
   font-size: 2.8rem;
-  max-width: 800px;
-  margin: auto;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-top: 1rem;
-  color: rgba(255,255,255,0.9); /* 🔥 mejor que blanco puro */
+  margin-bottom: 20px;
+  color: rgba(255,255,255,0.9);
 }
 
-/* 🔥 NUEVO: subtítulo más profesional */
-.hero-subtitle {
-  font-size: 1.15rem;
-  margin-top: 1rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgba(255,255,255,0.85);
+/* Miniaturas de publicaciones */
+.publication-thumbs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.publication-thumbs img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-thumbs img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 }
 
 /* ===== SECCIONES ===== */
@@ -243,8 +274,18 @@ footer p {
     font-size: 2rem;
   }
 
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .publication-thumbs img {
+    width: 90px;
+    margin-bottom: 10px;
+  }
+
   .section {
     padding: 60px 15px;
   }
 
 }
+
