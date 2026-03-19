@@ -116,10 +116,12 @@ p {
 
 /* ===== HERO ===== */
 .hero {
+  position: relative;
   background: linear-gradient(to right, #0047AB, #0066cc);
   color: white;
   text-align: center;
   padding: 90px 20px;
+  overflow: hidden;
 }
 
 .hero.small {
@@ -130,12 +132,16 @@ p {
   font-size: 2.8rem;
   max-width: 800px;
   margin: auto;
+  z-index: 1;
+  position: relative;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-top: 1rem;
   color: rgba(255,255,255,0.9); /* 🔥 mejor que blanco puro */
+  position: relative;
+  z-index: 1;
 }
 
 /* 🔥 NUEVO: subtítulo más profesional */
@@ -146,6 +152,49 @@ p {
   margin-left: auto;
   margin-right: auto;
   color: rgba(255,255,255,0.85);
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== HERO VIDEO Y OVERLAY ===== */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Miniaturas publicaciones recientes */
+.publication-thumbs {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.publication-thumbs img {
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.publication-thumbs img:hover {
+  transform: scale(1.05);
 }
 
 /* ===== SECCIONES ===== */
@@ -241,6 +290,14 @@ footer p {
 
   .hero h1 {
     font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .publication-thumbs img {
+    width: 90px;
   }
 
   .section {
