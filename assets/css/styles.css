@@ -327,3 +327,14 @@ footer p {
 .member-link:hover {
   color: #0066cc; /* opcional: color hover */
 }
+
+
+.hero-home {
+  min-height: 85vh;
+}
+
+@media (max-width: 768px) {
+  .hero-home {
+    min-height: 60vh;
+  }
+}
