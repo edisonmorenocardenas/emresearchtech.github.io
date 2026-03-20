@@ -322,3 +322,11 @@ footer p {
 .member-link:hover {
   color: #0066cc; /* opcional: color hover */
 }
+
+/* ===== HERO SOLO PARA INDEX (VIDEO GRANDE) ===== */
+.hero-home {
+  min-height: 85vh; /* altura grande solo aquí */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
