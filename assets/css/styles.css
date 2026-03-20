@@ -117,16 +117,11 @@ p {
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  height: 80vh;              /* 🔥 NUEVO: controla altura */
-  min-height: 500px;         /* 🔥 asegura altura mínima */
   background: linear-gradient(to right, #0047AB, #0066cc);
   color: white;
   text-align: center;
+  padding: 90px 20px;
   overflow: hidden;
-
-  display: flex;             /* 🔥 centra contenido */
-  align-items: center;
-  justify-content: center;
 }
 
 .hero.small {
@@ -326,15 +321,4 @@ footer p {
 
 .member-link:hover {
   color: #0066cc; /* opcional: color hover */
-}
-
-
-.hero-home {
-  min-height: 85vh;
-}
-
-@media (max-width: 768px) {
-  .hero-home {
-    min-height: 60vh;
-  }
 }
