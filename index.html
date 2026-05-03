@@ -68,86 +68,67 @@
   </div>
 </section>
 
-<!-- NOVEDADES -->
+<!-- ===== NEWS / RESEARCH ===== -->
 <section class="section">
   <div class="container">
-     <h2>Latest News & Research</h2>
+
+    <h2>Latest News & Research</h2>
 
     <p style="max-width:800px; margin:auto; text-align:center;">
       Selected research outputs, projects, and technological developments from EM Research & Tech.
     </p>
 
-    <!-- GRID DE NOTICIAS -->
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-      gap:25px;
-      margin-top:40px;
-    ">
+    <div class="news-grid">
 
-      <!-- ITEM 1 -->
-      <a href="https://doi.org/10.3390/en19061485" target="_blank" style="text-decoration:none; color:inherit;">
-        <div>
-          <img src="assets/img/publications/Graphic4.png" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px;">
-          <h4 style="margin-top:10px;">Energy Systems Optimization</h4>
-          <p style="font-size:14px; line-height:1.4;">
-            Advanced modelling techniques for energy efficiency and system optimization using data-driven approaches.
-          </p>
+      <!-- CARD 1 -->
+      <a href="https://doi.org/10.3390/en19061485" class="news-card" target="_blank"
+         style="background-image:url('assets/img/publications/Graphic4.png');">
+
+        <div class="news-content">
+          <h3>Energy Systems Optimization</h3>
+          <p>Advanced modelling techniques for energy efficiency and system optimization using data-driven approaches.</p>
         </div>
+
       </a>
 
-      <!-- ITEM 2 -->
-      <a href="https://doi.org/10.3390/s26061756" target="_blank" style="text-decoration:none; color:inherit;">
-        <div>
-          <img src="assets/img/publications/Graphic3.png" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
-          <h4 style="margin-top:10px;">Intelligent Sensor Systems</h4>
-          <p style="font-size:14px; line-height:1.4;">
-            Development of smart sensing architectures for real-time monitoring and data acquisition.
-          </p>
+      <!-- CARD 2 -->
+      <a href="https://doi.org/10.3390/s26061756" class="news-card" target="_blank"
+         style="background-image:url('assets/img/publications/Graphic3.png');">
+
+        <div class="news-content">
+          <h3>Intelligent Sensor Systems</h3>
+          <p>Smart sensing architectures for real-time monitoring and data acquisition.</p>
         </div>
+
       </a>
 
-      <!-- ITEM 3 -->
-      <a href="https://doi.org/10.3390/computers15030160" target="_blank" style="text-decoration:none; color:inherit;">
-        <div>
-          <img src="assets/img/publications/Graphic2.png" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
-          <h4 style="margin-top:10px;">Computational Intelligence</h4>
-          <p style="font-size:14px; line-height:1.4;">
-            Machine learning models applied to predictive systems and computational analysis.
-          </p>
+      <!-- CARD 3 -->
+      <a href="https://doi.org/10.3390/computers15030160" class="news-card" target="_blank"
+         style="background-image:url('assets/img/publications/Graphic2.png');">
+
+        <div class="news-content">
+          <h3>Computational Intelligence</h3>
+          <p>Machine learning models applied to predictive systems and computational analysis.</p>
         </div>
+
       </a>
 
-      <!-- ITEM 4 -->
-      <a href="https://doi.org/10.3390/electronics15020382" target="_blank" style="text-decoration:none; color:inherit;">
-        <div>
-          <img src="assets/img/publications/Graphic1.png" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
-          <h4 style="margin-top:10px;">Electronic Systems Design</h4>
-          <p style="font-size:14px; line-height:1.4;">
-            Design and validation of advanced electronic systems for engineering applications.
-          </p>
+      <!-- CARD 4 -->
+      <a href="https://doi.org/10.3390/electronics15020382" class="news-card" target="_blank"
+         style="background-image:url('assets/img/publications/Graphic1.png');">
+
+        <div class="news-content">
+          <h3>Electronic Systems Design</h3>
+          <p>Design and validation of advanced electronic systems for engineering applications.</p>
         </div>
+
       </a>
 
     </div>
 
     <!-- CTA -->
     <div style="text-align:center; margin-top:50px;">
-      <a href="research.html" style="
-        display:inline-block;
-        padding:12px 25px;
-        border:1px solid #000;
-        border-radius:6px;
-        text-decoration:none;
-        color:#000;
-        font-weight:500;
-        transition:0.3s;
-      "
-      onmouseover="this.style.background='#000'; this.style.color='#fff';"
-      onmouseout="this.style.background='transparent'; this.style.color='#000';"
-      >
-        View all updates
-      </a>
+      <a href="research.html" class="btn-outline">View all updates</a>
     </div>
 
   </div>
