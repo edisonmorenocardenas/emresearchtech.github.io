@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | EM Research & Tech</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css"> 
 </head>
+
 <body>
 
 <!-- ===== NAVBAR ===== -->
@@ -13,8 +14,10 @@
 
   <!-- LOGO -->
   <div class="navbar-top">
-    <a href="index.html">
-      <img src="assets/img/logo2.png" class="logo-img">
+    <a href="../index.html">
+      <img src="../assets/img/logo2.png"
+           alt="EM Research & Tech Logo"
+           class="logo-img">
     </a>
   </div>
 
@@ -25,35 +28,35 @@
 
       <!-- HOME -->
       <li>
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
       </li>
 
       <!-- ABOUT -->
       <li class="dropdown">
-        <a href="#">About</a>
+        <a href="#" class="active">About</a>
 
         <ul class="dropdown-menu">
 
           <li>
-            <a href="sobre.html">
+            <a href="../sobre/sobre.html">
               About Us
             </a>
           </li>
 
           <li>
-            <a href="sobre.html#principles">
+            <a href="../sobre/mission_vision_values.html" class="active">
               Mission, Vision & Values
             </a>
           </li>
 
           <li>
-            <a href="equipo.html">
+            <a href="../sobre/equipo.html">
               Team
             </a>
           </li>
 
           <li>
-            <a href="sobre.html#partners">
+            <a href="../sobre/collaborations.html">
               Collaborations
             </a>
           </li>
@@ -67,35 +70,21 @@
 
         <ul class="dropdown-menu">
 
-          <li>
-            <a href="tics.html">
-              ICT
-            </a>
-          </li>
-
-          <li>
-            <a href="medioambiente.html">
-              Environment
-            </a>
-          </li>
-
-          <li>
-            <a href="energia.html">
-              Energy
-            </a>
-          </li>
+          <li><a href="../tics.html">ICT</a></li>
+          <li><a href="../medioambiente.html">Environment</a></li>
+          <li><a href="../energia.html">Energy</a></li>
 
         </ul>
       </li>
 
       <!-- RESEARCH -->
       <li class="dropdown">
-        <a href="#" class="active">Research</a>
+        <a href="#">Research</a>
 
         <ul class="dropdown-menu">
 
           <li>
-            <a href="research/teg/TEG.html">
+            <a href="TEG.html">
               Technology and Engineering Group (TEG)
             </a>
           </li>
@@ -121,51 +110,23 @@
 
         <ul class="dropdown-menu">
 
-          <li>
-            <a href="servicios.html">
-              R&D Consulting
-            </a>
-          </li>
-
-          <li>
-            <a href="servicios.html">
-              Hardware Development
-            </a>
-          </li>
-
-          <li>
-            <a href="servicios.html">
-              Applied AI
-            </a>
-          </li>
-
-          <li>
-            <a href="servicios.html">
-              Automation
-            </a>
-          </li>
-
-          <li>
-            <a href="servicios.html">
-              Prototyping
-            </a>
-          </li>
+          <li><a href="../servicios.html">R&D Consulting</a></li>
+          <li><a href="../servicios.html">Hardware Development</a></li>
+          <li><a href="../servicios.html">Applied AI</a></li>
+          <li><a href="../servicios.html">Automation</a></li>
+          <li><a href="../servicios.html">Prototyping</a></li>
 
         </ul>
       </li>
 
       <!-- NEWS -->
       <li>
-        <a href="news.html">
-          News
-        </a>
+        <a href="../news.html">News</a>
       </li>
 
       <!-- CONTACT -->
       <li>
-        <a href="contacto.html">
-          Contact
-        </a>
+        <a href="../contacto.html">Contact</a>
       </li>
 
     </ul>
@@ -174,19 +135,64 @@
 
 </header>
 
+
+<!-- ===== HERO (IMAGEN DIRECTA) ===== -->
+<section class="hero hero-home"
+  style="
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    min-height: 250px;
+    background-image: url('research.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 👈 CAMBIO IMPORTANTE */
+    padding-left: 80px; /* 👈 separa del borde izquierdo */
+  ">
+
+  <!-- Overlay oscuro -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+  "></div>
+
+  <!-- Texto encima -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  ">
+    <h2 style="font-size: 2.5rem; font-weight: 600;">
+        Research & Development
+    </h2>
+  </div>
+
+</section>
+
+<!-- ===== MAIN ===== -->
 <main>
 
   <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="container">
-      <h1>Research & Development</h1>
-      <p>
-        We explore the boundaries between engineering, applied science, and emerging technology
-        to build real, measurable solutions.
-      </p>
-    </div>
-  </section>
+  <section class="hero small">
 
+    <div class="container narrow">
+    <!-- 
+      <h1>We explore the boundaries between engineering, applied science, and emerging technology
+        to build real, measurable solutions.
+    -->
+    </div>
+
+  </section>
+  
   <!-- ===== INTRO ===== -->
   <section class="section">
     <div class="container narrow">
