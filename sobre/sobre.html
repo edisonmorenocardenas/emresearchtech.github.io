@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | EM Research & Tech</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>About us | EM Research & Tech</title>
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
 
@@ -13,8 +15,10 @@
 
   <!-- LOGO -->
   <div class="navbar-top">
-    <a href="index.html">
-      <img src="assets/img/logo2.png" class="logo-img">
+    <a href="../index.html">
+      <img src="../assets/img/logo2.png"
+           alt="EM Research & Tech Logo"
+           class="logo-img">
     </a>
   </div>
 
@@ -25,12 +29,12 @@
 
       <!-- HOME -->
       <li>
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
       </li>
 
       <!-- ABOUT -->
       <li class="dropdown">
-        <a href="#">About</a>
+        <a href="#" class="active">About</a>
 
         <ul class="dropdown-menu">
 
@@ -53,7 +57,7 @@
           </li>
 
           <li>
-            <a href="collaborations.html">
+            <a href="collaborations.html" class="active">
               Collaborations
             </a>
           </li>
@@ -66,48 +70,32 @@
         <a href="#">Sectors</a>
 
         <ul class="dropdown-menu">
-
-          <li>
-            <a href="tics.html">
-              ICT
-            </a>
-          </li>
-
-          <li>
-            <a href="medioambiente.html">
-              Environment
-            </a>
-          </li>
-
-          <li>
-            <a href="energia.html">
-              Energy
-            </a>
-          </li>
-
+          <li><a href="../tics.html">ICT</a></li>
+          <li><a href="../medioambiente.html">Environment</a></li>
+          <li><a href="../energia.html">Energy</a></li>
         </ul>
       </li>
 
       <!-- RESEARCH -->
       <li class="dropdown">
-        <a href="#" class="active">Research</a>
+        <a href="#">Research</a>
 
         <ul class="dropdown-menu">
 
           <li>
-            <a href="research/teg/TEG.html">
+            <a href="../research/teg/TEG.html">
               Technology and Engineering Group (TEG)
             </a>
           </li>
 
           <li>
-            <a href="research.html">
+            <a href="../research.html">
               Research Areas
             </a>
           </li>
 
           <li>
-            <a href="research_updates.html">
+            <a href="../research_updates.html">
               Publications
             </a>
           </li>
@@ -120,52 +108,22 @@
         <a href="#">Services</a>
 
         <ul class="dropdown-menu">
-
-          <li>
-            <a href="servicios.html">
-              R&D Consulting
-            </a>
-          </li>
-
-          <li>
-            <a href="servicios.html">
-              Hardware Development
-            </a>
-          </li>
-
-          <li>
-            <a href="servicios.html">
-              Applied AI
-            </a>
-          </li>
-
-          <li>
-            <a href="servicios.html">
-              Automation
-            </a>
-          </li>
-
-          <li>
-            <a href="servicios.html">
-              Prototyping
-            </a>
-          </li>
-
+          <li><a href="../servicios.html">R&D Consulting</a></li>
+          <li><a href="../servicios.html">Hardware Development</a></li>
+          <li><a href="../servicios.html">Applied AI</a></li>
+          <li><a href="../servicios.html">Automation</a></li>
+          <li><a href="../servicios.html">Prototyping</a></li>
         </ul>
       </li>
 
       <!-- NEWS -->
       <li>
-        <a href="news.html">
-          News
-        </a>
+        <a href="../news.html">News</a>
       </li>
 
       <!-- CONTACT -->
       <li>
-        <a href="contacto.html">
-          Contact
-        </a>
+        <a href="../contacto.html">Contact</a>
       </li>
 
     </ul>
@@ -174,122 +132,184 @@
 
 </header>
 
+
+<!-- ===== HERO (IMAGEN DIRECTA) ===== -->
+<section class="hero hero-home"
+  style="
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    min-height: 200px;
+    background-image: url('colaboraciones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 👈 CAMBIO IMPORTANTE */
+    padding-left: 80px; /* 👈 separa del borde izquierdo */
+  ">
+
+  <!-- Overlay oscuro -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+  "></div>
+
+  <!-- Texto encima -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  ">
+    <h2 style="font-size: 2.5rem; font-weight: 600;">
+        Collaborations
+    </h2>
+  </div>
+
+</section>
+
+<!-- ===== MAIN ===== -->
 <main>
 
-  <!-- ===== HERO (MEJORADO) ===== -->
+  <!-- ===== HERO ===== -->
   <section class="hero small">
+
     <div class="container narrow">
-      <h1>About us</h1>
-      <p class="hero-subtitle">
-        We combine science, engineering and management to transform ideas into technological innovation. 
-      </p>
+    <h3> EM Research & Tech establishes strategic partnerships with leading universities
+        in Latin America and Europe to foster research, innovation, and technology transfer.
+    </h3>
     </div>
+
   </section>
 
-  <!-- ===== WHO WE ARE ===== -->
+
+  </section>
+
+<!-- ===== UNSAAC ===== -->
+<section class="section alt">
+  <div class="container">
+
+    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap;">
+
+      <!-- IMAGE LEFT -->
+      <div style="flex:1; min-width:280px; text-align:center;">
+        <img src="UNSAAC.png"
+             alt="UNSAAC"
+             style="width:100%; max-width:500px; object-fit:contain;">
+      </div>
+
+      <!-- TEXT RIGHT -->
+      <div style="flex:1; min-width:280px;">
+        <h2>Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)</h2>
+
+        <p>
+          Strategic collaboration focused on engineering research, scientific training,
+          and the development of applied technological solutions in telecommunications,
+          electronics, and artificial intelligence.
+        </p>
+
+        <p>
+          This partnership strengthens regional innovation and promotes the integration
+          of academic research with real-world engineering challenges in Peru.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== UPV ===== -->
+<section class="section">
+  <div class="container">
+
+    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap;">
+
+      <!-- TEXT LEFT -->
+      <div style="flex:1; min-width:280px;">
+        <h2>Universitat Politècnica de València (UPV) – Spain</h2>
+
+        <p>
+          International collaboration in advanced engineering, signal processing,
+          artificial intelligence, and electromagnetics.
+        </p>
+
+        <p>
+          This partnership enables joint research projects, academic exchange,
+          and the development of high-impact scientific publications.
+        </p>
+      </div>
+
+      <!-- IMAGE RIGHT -->
+      <div style="flex:1; min-width:280px; text-align:center;">
+        <img src="UPV.png"
+             alt="UPV"
+             style="width:100%; max-width:500px; object-fit:contain;">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== UPS ===== -->
+<section class="section alt">
+  <div class="container">
+
+    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap;">
+
+      <!-- IMAGE LEFT -->
+      <div style="flex:1; min-width:280px; text-align:center;">
+        <img src="UPS.png"
+             alt="UPS Ecuador"
+             style="width:100%; max-width:500px; object-fit:contain;">
+      </div>
+
+      <!-- TEXT RIGHT -->
+      <div style="flex:1; min-width:280px;">
+        <h2>Universidad Politécnica Salesiana (UPS) – Ecuador</h2>
+
+        <p>
+          Collaboration in applied research, embedded systems, automation,
+          and intelligent engineering solutions.
+        </p>
+
+        <p>
+          This partnership supports technological development and innovation
+          projects with strong societal and industrial impact in Latin America.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ===== FINAL ===== -->
   <section class="section">
     <div class="container narrow">
-      <h2>Who are we?</h2>
 
-      <p>
-        <strong>EM Research & Tech</strong> is a private organization dedicated to research,
-        technological development and consulting.
+      <h2 style="text-align:center;">Global Collaboration Vision</h2>
+
+      <p style="text-align:center; font-size:17px; line-height:1.9;">
+        Our collaboration network connects Latin America and Europe through science,
+        engineering, and innovation, building a shared ecosystem for technological progress.
       </p>
-
-      <p>
-        Established in Cusco, Peru, we focus on applied research, training and technology transfer,
-        creating solutions with real impact.
-      </p>
-    </div>
-  </section>
-
-  <!-- ===== PRINCIPLES ===== -->
-  <section class="section alt" id="principles">
-    <div class="container">
-
-      <h2>Our principles</h2>
-
-      <div class="grid grid-3">
-
-        <div class="card">
-          <h3>Mission</h3>
-          <p>Transform applied research into intelligent engineering solutions validated in real-world environments.</p>
-        </div>
-
-        <div class="card">
-          <h3>Vision</h3>
-          <p>A leading deep-tech company delivering scalable AI and engineering solutions across industries.</p>
-        </div>
-
-        <div class="card">
-          <h3>Values</h3>
-          <ul>
-            <li>Innovation</li>
-            <li>Excellence</li>
-            <li>Collaboration</li>
-            <li>Sustainability</li>
-          </ul>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== HOW WE WORK (REEMPLAZA STRUCTURE) ===== -->
-  <section class="section">
-    <div class="container">
-
-      <h2>How we work</h2>
-
-      <div class="grid grid-3">
-
-        <div class="card">
-          <h3>Problem Definition</h3>
-          <p>
-            We analyze complex challenges and define high-impact solutions.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>System Development</h3>
-          <p>
-            We design and build integrated AI and engineering systems.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Validation & Deployment</h3>
-          <p>
-            We validate solutions in real environments and scale them for practical use.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ===== PARTNERS ===== -->
-   <section class="section alt" id="partners">
-    <div class="container">
-      <h2>Collaborations</h2>
-
-      <p style="text-align:center; max-width:700px; margin:auto;">
-        We collaborate with universities, research centres and industry partners to drive innovation and make a real-world impact.
-      </p>
-
-      <div class="partners-logos">
-        <img src="assets/img/UNSAAC.png" alt="UNSAAC">
-        <img src="assets/img/UPV.png" alt="UPV">
-        <img src="assets/img/UPS.png" alt="UPV">
-      </div>
 
     </div>
   </section>
 
 </main>
+
+
+
 
 <footer>
   <p>✉ edison.moreno@emresearchtech.com | +51 973400884</p>
