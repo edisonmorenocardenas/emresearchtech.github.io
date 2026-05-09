@@ -133,19 +133,63 @@
 
 </header>
 
+
+<!-- ===== HERO (IMAGEN DIRECTA) ===== -->
+<section class="hero hero-home"
+  style="
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    min-height: 250px;
+    background-image: url('colaboraciones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 👈 CAMBIO IMPORTANTE */
+    padding-left: 80px; /* 👈 separa del borde izquierdo */
+  ">
+
+  <!-- Overlay oscuro -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+  "></div>
+
+  <!-- Texto encima -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  ">
+    <h2 style="font-size: 2.5rem; font-weight: 600;">
+        Collaborations
+    </h2>
+  </div>
+
+</section>
+
 <!-- ===== MAIN ===== -->
 <main>
 
   <!-- ===== HERO ===== -->
   <section class="hero small">
-    <div class="container narrow">
-      <h1>Collaborations</h1>
 
-      <p style="text-align:center; font-size:18px; line-height:1.8; margin-top:15px;">
-        EM Research & Tech establishes strategic partnerships with leading universities
+    <div class="container narrow">
+     EM Research & Tech establishes strategic partnerships with leading universities
         in Latin America and Europe to foster research, innovation, and technology transfer.
-      </p>
     </div>
+
+  </section>
+
+
   </section>
 
 <!-- ===== UNSAAC ===== -->
