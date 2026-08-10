@@ -1,252 +1,292 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | EM Research & Tech</title>
-  <link rel="stylesheet" href="../assets/css/styles.css"> 
-</head>
+<ul class="menu">
 
-<body>
+  <!-- HOME -->
+  <li>
+    <a href="../index.html">Home</a>
+  </li>
 
-<!-- ===== NAVBAR ===== -->
-<header class="navbar">
 
-  <!-- LOGO -->
-  <div class="navbar-top">
-    <a href="../index.html">
-      <img src="../assets/img/logo2.png"
-           alt="EM Research & Tech Logo"
-           class="logo-img">
-    </a>
-  </div>
+  <!-- ABOUT -->
+  <li class="dropdown">
+    <a href="#">About</a>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar-bottom">
+    <ul class="dropdown-menu">
 
-    <ul class="menu">
-
-      <!-- HOME -->
       <li>
-        <a href="../index.html">Home</a>
+        <a href="../sobre/sobre.html">
+          About Us
+        </a>
       </li>
 
-      <!-- ABOUT -->
-      <li class="dropdown">
-        <a href="#" class="active">About</a>
-
-        <ul class="dropdown-menu">
-
-          <li>
-            <a href="../sobre/sobre.html">
-              About Us
-            </a>
-          </li>
-
-          <li>
-            <a href="../sobre/mission_vision_values.html" class="active">
-              Mission, Vision & Values
-            </a>
-          </li>
-
-          <li>
-            <a href="../sobre/equipo.html">
-              Team
-            </a>
-          </li>
-
-          <li>
-            <a href="../sobre/collaborations.html">
-              Collaborations
-            </a>
-          </li>
-
-        </ul>
-      </li>
-
-      <!-- SECTORS -->
-      <li class="dropdown">
-        <a href="#">Sectors</a>
-
-        <ul class="dropdown-menu">
-
-          <li><a href="../tics.html">ICT</a></li>
-          <li><a href="../medioambiente.html">Environment</a></li>
-          <li><a href="../energia.html">Energy</a></li>
-
-        </ul>
-      </li>
-
-      <!-- RESEARCH -->
-      <li class="dropdown">
-        <a href="#">Research</a>
-
-        <ul class="dropdown-menu">
-
-          <li>
-            <a href="../research/TEG.html">
-              Technology and Engineering Group (TEG)
-            </a>
-          </li>
-
-          <li>
-            <a href="../research/research.html">
-              Research Areas
-            </a>
-          </li>
-
-          <li>
-            <a href="../research/research_updates.html">
-              Publications
-            </a>
-          </li>
-
-        </ul>
-      </li>
-
-      <!-- SERVICES -->
-      <li class="dropdown">
-        <a href="#">Services</a>
-
-        <ul class="dropdown-menu">
-
-          <li><a href="../services/servicios.html">R&D Consulting</a></li>
-          <li><a href="../services/servicios.html">Hardware Development</a></li>
-          <li><a href="../services/servicios.html">Applied AI</a></li>
-          <li><a href="../services/servicios.html">Automation</a></li>
-          <li><a href="../services/servicios.html">Prototyping</a></li>
-
-        </ul>
-      </li>
-
-      <!-- NEWS -->
       <li>
-        <a href="news.html">News</a>
+        <a href="../sobre/mission_vision_values.html">
+          Mission, Vision & Values
+        </a>
       </li>
 
-      <!-- CONTACT -->
       <li>
-        <a href="../contacto.html">Contact</a>
+        <a href="../sobre/equipo.html">
+          Team
+        </a>
+      </li>
+
+      <li>
+        <a href="../sobre/collaborations.html">
+          Collaborations
+        </a>
       </li>
 
     </ul>
-
-  </nav>
-
-</header>
+  </li>
 
 
-<!-- ===== HERO (IMAGEN DIRECTA) ===== -->
-<section class="hero hero-home"
-  style="
-    position: relative;
-    width: 100%;
-    height: 85vh;
-    min-height: 250px;
-    background-image: url('news.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* 👈 CAMBIO IMPORTANTE */
-    padding-left: 80px; /* 👈 separa del borde izquierdo */
+  <!-- SECTORS -->
+  <li class="dropdown">
+    <a href="#">Sectors</a>
+
+    <ul class="dropdown-menu">
+
+      <li>
+        <a href="../tics.html">
+          ICT
+        </a>
+      </li>
+
+      <li>
+        <a href="../medioambiente.html">
+          Environment
+        </a>
+      </li>
+
+      <li>
+        <a href="../energia.html">
+          Energy
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+
+  <!-- RESEARCH -->
+  <li class="dropdown">
+    <a href="#">Research</a>
+
+    <ul class="dropdown-menu">
+
+      <li>
+        <a href="../research/TEG.html">
+          Technology and Engineering Group (TEG)
+        </a>
+      </li>
+
+      <li>
+        <a href="../research/research.html">
+          Research Areas
+        </a>
+      </li>
+
+      <li>
+        <a href="../research/research_updates.html">
+          Publications
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+
+  <!-- SERVICES -->
+  <li class="dropdown">
+    <a href="#">Services</a>
+
+    <ul class="dropdown-menu">
+
+      <li>
+        <a href="../services/servicios.html">
+          R&D Consulting
+        </a>
+      </li>
+
+      <li>
+        <a href="../services/servicios.html">
+          Hardware Development
+        </a>
+      </li>
+
+      <li>
+        <a href="../services/servicios.html">
+          Applied AI
+        </a>
+      </li>
+
+      <li>
+        <a href="../services/servicios.html">
+          Automation
+        </a>
+      </li>
+
+      <li>
+        <a href="../services/servicios.html">
+          Prototyping
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+
+  <!-- NEWS -->
+  <li>
+    <a href="news.html" class="active">
+      News
+    </a>
+  </li>
+
+
+  <!-- CONTACT -->
+  <li>
+    <a href="../contacto.html">
+      Contact
+    </a>
+  </li>
+
+</ul>
+
+
+<!-- =========================
+     NEWS CONTENT
+========================= -->
+
+<div class="container narrow">
+
+  <h2>Latest news</h2>
+
+  <p style="
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+  ">
+    Updates on ongoing projects, applied research activities,
+    and institutional collaborations.
+  </p>
+
+
+  <!-- =========================
+       NEWS GRID
+  ========================= -->
+
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:25px;
+    margin-top:40px;
   ">
 
-  <!-- Overlay oscuro -->
-  <div style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.5);
-  "></div>
 
-  <!-- Texto encima -->
-  <div style="
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: white;
-    padding: 20px;
-  ">
-    <h2 style="font-size: 2.5rem; font-weight: 600;">
-        News
-    </h2>
-  </div>
+    <!-- =========================
+         NEWS 1
+    ========================= -->
 
-</section>
+    <a
+      href="https://web.facebook.com/paqarinawasicusco/posts/pfbid02p7CDKrm2tTeZcKiYTibVKLhAc7X4EUkwXXqqKfodd4pmYFFQvuG3uhEdnMK6f28ol"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="
+        text-decoration:none;
+        color:inherit;
+      "
+    >
 
-<!-- ===== MAIN ===== -->
-<main>
+      <div>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero small" style="padding: 40px 0;">
+        <img
+          src="news1.jpg"
+          alt="EM Research & Tech selected for Cusco Startup Lab 2026"
+          style="
+            width:100%;
+            aspect-ratio:16/9;
+            object-fit:cover;
+            border-radius:10px;
+          "
+        >
 
-    <div class="container narrow">
-    <!-- 
-      <h1>Institutional updates, project milestones, collaborations,
-         and technological developments from EM Research & Tech.
-    -->
-    </div>
+        <h4 style="margin-top:10px;">
+          Selected for Cusco Startup Lab 2026
+        </h4>
 
-  </section>
+        <p style="
+          font-size:14px;
+          line-height:1.4;
+        ">
+          EM Research & Tech has been selected among more than
+          150 initiatives for the Cusco Startup Lab 2026 program.
+        </p>
 
+        <p style="
+          font-size:12px;
+          font-weight:600;
+          margin-top:8px;
+        ">
+          View full announcement →
+        </p>
 
-<!-- ===== NEWS GRID ===== -->
-<section class="section">
-  <div class="container">
+      </div>
 
-    <h2>Latest news</h2>
-
-    <p style="max-width:800px; margin:auto; text-align:center;">
-      Updates on ongoing projects, applied research activities, and institutional collaborations.
-    </p>
-
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-      gap:25px;
-      margin-top:40px;
-    ">
-
-    <!-- News 1 -->
-    <a href="https://web.facebook.com/paqarinawasicusco/posts/pfbid02p7CDKrm2tTeZcKiYTibVKLhAc7X4EUkwXXqqKfodd4pmYFFQvuG3uhEdnMK6f28ol"
-   target="_blank"  style="text-decoration:none; color:inherit;">
-
-        <div>
-            <img src="news1.jpg"
-            style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px;">
-
-            <h4 style="margin-top:10px;">
-                Selected for Cusco Startup Lab 2026
-            </h4>
-            <p style="font-size:14px; line-height:1.4;">
-                EM Research & Tech has been selected among more than 150 initiatives for the Cusco Startup Lab 2026 program.
-            </p>
-            <p style="font-size:12px; font-weight:600; margin-top:8px;">
-                 View full announcement →
-            </p>
-         </div>
     </a>
 
 
+    <!-- =========================
+         NEWS 2
+    ========================= -->
 
+    <a
+      href="news_1/news_1.html"
+      style="
+        text-decoration:none;
+        color:inherit;
+      "
+    >
 
-    </div>
+      <div>
+
+        <img
+          src="news_1/photo1.jpg"
+          alt="EM Research & Tech at PERUMEC 2026"
+          style="
+            width:100%;
+            aspect-ratio:16/9;
+            object-fit:cover;
+            border-radius:10px;
+          "
+        >
+
+        <h4 style="margin-top:10px;">
+          EM Research & Tech at PERUMEC 2026
+        </h4>
+
+        <p style="
+          font-size:14px;
+          line-height:1.4;
+        ">
+          EM Research & Tech participated in PERUMEC 2026,
+          delivering a practical workshop on artificial intelligence
+          and computer vision for industrial applications.
+        </p>
+
+        <p style="
+          font-size:12px;
+          font-weight:600;
+          margin-top:8px;
+        ">
+          Read full story →
+        </p>
+
+      </div>
+
+    </a>
+
 
   </div>
-</section>
 
-</main>
-
-
-<!-- ===== FOOTER ===== -->
-<footer>
-  <p>✉ edison.moreno@emresearchtech.com | +51 973400884</p>
-  <p>© 2025 EM Research & Tech</p>
-</footer>
-
-</body>
-</html>
+</div>
