@@ -61,11 +61,10 @@ p {
 }
 
 .logo-img {
-  width: 650px;
-  max-width: 90vw;
-  height: auto;
+  width: 300px !important;
+  max-width: none !important;
+  height: auto !important;
   display: block;
-  transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
